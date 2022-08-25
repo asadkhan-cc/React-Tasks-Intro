@@ -1,0 +1,42 @@
+// rfc
+import React from 'react'
+
+export default function Login() {
+  return (
+    <div>Login</div>
+  )
+}
+// rfce
+import React from 'react'
+
+function Login() {
+  return (
+    <div>Login</div>
+  )
+}
+
+export default Login
+//rafc
+import React from 'react'
+
+export const Login = () => {
+  return (
+    <div>Login</div>
+  )
+}
+
+//rafce
+import React from 'react'
+
+const Login = () => {
+  return (
+    <div>Login</div>
+  )
+}
+
+export default Login
+
+
+// Named export	Default export
+// export class User {...}	export default class User {...}
+// import {User} from ...	import User from ...
