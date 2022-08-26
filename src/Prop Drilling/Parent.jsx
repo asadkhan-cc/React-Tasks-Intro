@@ -5,6 +5,7 @@ import Child1 from "./Child1";
 const Parent = () => {
 
   const [genders, setGenders] = useState([])
+  console.log(genders)
 
   const randJsonData = randData;
   // console.log(`${randJsonData}`)
