@@ -11,10 +11,10 @@ const LoginForm = () => {
 
   //==================form submit handeler===================
   const formSubmitHandeler = (event) => {
-    alert("eventhandeler triggered");
+    // alert("eventhandeler triggered");
     event.preventDefault();
-    if (json.userName === UserName && json.password == Password) {
-      alert("sucess");
+    if (json.userName === UserName && json.password === Password) {
+    //   alert("sucess");
       setRedirect(true);
       Navigate("/home");
       //routercode here
@@ -83,7 +83,7 @@ const LoginForm = () => {
             </button>
             <a
               className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-              href="#"
+              href
             >
               Forgot Password?
             </a>
