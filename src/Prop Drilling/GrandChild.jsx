@@ -18,11 +18,11 @@ const GrandChild = (props) => {
   return (
     <div className="text-left  w-[90%] relative mx-auto grid-cols-3 my-8 shadow-2xl rounded-lg py-5 hover:bg-zinc-100 hover:shadow-none">
       <div className="absolute top-[-50px] left-[50%] translate-x-[-50px] ">
-        {data.gender == "male" ? (
+        {data.gender === "male" ? (
           <img
             className="w-[100px] h-[100px]  rounded-full "
             src={
-              data.eyeColor == "brown"
+              data.eyeColor === "brown"
                 ? require("./assets/whiteguy.png")
                 : require("./assets/whiteguybrownhair.png")
             }
@@ -32,7 +32,7 @@ const GrandChild = (props) => {
           <img
             className="w-[100px] h-[100px]  rounded-full"
             src={
-              data.eyeColor == "blue"
+              data.eyeColor === "blue"
                 ? require("./assets/female.png")
                 : require("./assets/whiteguybrownhair.png")
             }

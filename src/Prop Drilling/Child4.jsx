@@ -3,8 +3,8 @@ import GrandChild from "./GrandChild";
 const Child4 = ({ data, getGender }) => {
   const _ID = useRef();
 
-  let males = data.map((e) => e.gender).filter((e) => e == "male");
-  let females = data.map((e) => e.gender).filter((e) => e == "female");
+  let males = data.map((e) => e.gender).filter((e) => e === "male");
+  let females = data.map((e) => e.gender).filter((e) => e === "female");
   function fire() {
     _ID.current.disabled = "disabled";
     _ID.current.className = _ID.current.className + " hidden";

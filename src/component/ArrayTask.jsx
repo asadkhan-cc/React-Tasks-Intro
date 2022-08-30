@@ -1,13 +1,13 @@
 import React from "react";
 
 const ArrayTask = () => {
-  function isObjEqual(a, b) {
-    // const x = JSON.stringify(a);
-    // const y = JSON.stringify(b);
+  // function isObjEqual(a, b) {
+  //   // const x = JSON.stringify(a);
+  //   // const y = JSON.stringify(b);
 
-    // return x === y;
-    return a === b;
-  }
+  //   // return x === y;
+  //   return a === b;
+  // }
   /////////
   const pureArr = [
     {

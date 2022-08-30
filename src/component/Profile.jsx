@@ -75,10 +75,10 @@ const Profile = () => {
       </form>
       {/* <div>Profile {obj.name}</div> */}
       <hr className="my-6" />
-      {defaultobj.name == "" &&
-      defaultobj.position == "" &&
-      defaultobj.age == "" &&
-      defaultobj.cast == "" ? (
+      {defaultobj.name === "" &&
+      defaultobj.position === "" &&
+      defaultobj.age === "" &&
+      defaultobj.cast === "" ? (
         <div className="border border-blue-600 w-1/2 m-auto text-center">
           <h1 className="text-2xl">Profile Data</h1>
           <h1 className="text-xl bg-red-400 text-red-100">
@@ -90,7 +90,7 @@ const Profile = () => {
           <h1 className="text-2xl">Profile Data</h1>
           <h1 className="text-xl w-1/3 overflow-hidden mx-auto">
             Name:
-            {!defaultobj.name == "" ? (
+            {!defaultobj.name === "" ? (
               defaultobj.name
             ) : (
               <span className="text-2xl"> - </span>
@@ -98,7 +98,7 @@ const Profile = () => {
           </h1>
           <h1 className="text-xl w-1/3 overflow-hidden mx-auto">
             Position:
-            {!defaultobj.position == "" ? (
+            {!defaultobj.position === "" ? (
               defaultobj.position
             ) : (
               <span className="text-2xl"> - </span>
@@ -106,7 +106,7 @@ const Profile = () => {
           </h1>
           <h1 className="text-xl w-1/3 overflow-hidden mx-auto ">
             age:
-            {!defaultobj.age == "" ? (
+            {!defaultobj.age === "" ? (
               defaultobj.age
             ) : (
               <span className="text-2xl"> - </span>
@@ -114,7 +114,7 @@ const Profile = () => {
           </h1>
           <h1 className="text-xl w-1/3 overflow-hidden mx-auto">
             Cast:
-            {!defaultobj.cast == "" ? (
+            {!defaultobj.cast === "" ? (
               defaultobj.cast
             ) : (
               <span className="text-2xl"> - </span>

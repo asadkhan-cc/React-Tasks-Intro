@@ -17,7 +17,7 @@ const Parent = () => {
     <div>
       parent Component 
       {
-        !genders.length == 0 ?<div className="text-center">No Of Males are {genders[0]} and No Of Females are {genders[1]}</div>:       <div className=" hidden text-center">No Of Males are {genders[0]} and No Of Females are {genders[1]}</div>
+        !genders.length === 0 ?<div className="text-center">No Of Males are {genders[0]} and No Of Females are {genders[1]}</div>:       <div className=" hidden text-center">No Of Males are {genders[0]} and No Of Females are {genders[1]}</div>
       }
       <Child1 data={randJsonData} getGender={getGender} />
     </div>
