@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: 18
       - name: Yarn Setup
-      - uses: DerYeger/yarn-setup-action@v1.0.1
-        with:
-          node-version: 18          
-          run: yarn install --frozen-lockfile
-          run: yarn test
+          uses: DerYeger/yarn-setup-action@v1.0.1
+          with:
+            node-version: 18          
+      run: yarn install --frozen-lockfile
+      run: yarn test
 
   publish-yarn:
     needs: build
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-          run: yarn install --frozen-lockfile
-          run: yarn publish
+        run: yarn install --frozen-lockfile
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
