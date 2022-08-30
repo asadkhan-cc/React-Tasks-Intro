@@ -14,7 +14,7 @@ const LoginForm = () => {
     // alert("eventhandeler triggered");
     event.preventDefault();
     if (json.userName === UserName && json.password === Password) {
-    //   alert("sucess");
+      //   alert("sucess");
       setRedirect(true);
       Navigate("/home");
       //routercode here
@@ -24,7 +24,7 @@ const LoginForm = () => {
       console.log("login failed");
     }
     // console.log(Flag);
-  }
+  };
   return (
     <>
       <div className="w-full max-w-xs mx-auto  mt-40">
@@ -81,10 +81,7 @@ const LoginForm = () => {
             >
               Log In
             </button>
-            <a
-              className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-              href
-            >
+            <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
               Forgot Password?
             </a>
           </div>

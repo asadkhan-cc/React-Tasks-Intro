@@ -112,8 +112,8 @@ const ArrayTask = () => {
         {JSON.stringify(required_value_Arr)}
       </p>
       <p className="text-blue-500 underline my-4">ANSWER</p>
-      {ans1.map((e) => (
-        <div>{e.name}</div>
+      {ans1.map((e, index) => (
+        <div key={index}>{e.name}</div>
       ))}
       <h2 className="text-2xl mb-2 text-center"> Task 4 Arrays given below.</h2>
       <p>
@@ -121,8 +121,8 @@ const ArrayTask = () => {
         {JSON.stringify(matchArr)}
       </p>
       <p className="text-blue-500 underline my-4">ANSWER</p>
-      {result.map((e) => (
-        <div>{e.name}</div>
+      {result.map((e , index) => (
+        <div key={index}>{e.name}</div>
       ))}
     </div>
   );
