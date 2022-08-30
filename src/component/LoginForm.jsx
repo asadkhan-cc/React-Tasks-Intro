@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
   //   console.log(json);
   const [Flag, setFlag] = useState(true);
-  const [Redirect, setRedirect] = useState(false);
+  // const [Redirect, setRedirect] = useState(false);
   const [UserName, setUserName] = useState("");
   const [Password, setPassword] = useState("");
   const Navigate = useNavigate();
@@ -15,7 +15,7 @@ const LoginForm = () => {
     event.preventDefault();
     if (json.userName === UserName && json.password === Password) {
       //   alert("sucess");
-      setRedirect(true);
+      // setRedirect(true);
       Navigate("/home");
       //routercode here
     } else {
@@ -81,7 +81,8 @@ const LoginForm = () => {
             >
               Log In
             </button>
-            <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+            <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+            href=".#">
               Forgot Password?
             </a>
           </div>
