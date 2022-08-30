@@ -27,7 +27,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<LoginForm />}>
-            <Route path="/home" element={<Home />}></Route>
+            <Route path="/home" element={<Profile></Profile>}></Route>
           </Route>
           <Route path="/counter" element={<Counter />}></Route>
           <Route path="/profile" element={<Profile />}></Route>

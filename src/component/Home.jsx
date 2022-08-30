@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
         <h1>Home Screen</h1>
+        <p>tada</p>
         <Link to="/">Login</Link>
         <hr />
         <Counter></Counter>

@@ -90,19 +90,35 @@ const ArrayTask = () => {
     });
   });
   console.log("try 2", result);
+
+  // const matchObject = (arr1, arr2) => {
+  //   var result = arr1.filter(function (obj) {
+  //     return arr2.some(function (obj2) {
+  //       return obj.id === obj2.id;
+  //     });
+  //   });
+  //   return result;
+  // };
+
   return (
-    <div className="text-center" >
-      <h1 className="text-3xl text-center my-8 font-bold"> Array Task 3 and 4.</h1>
+    <div className="text-center">
+      <h1 className="text-3xl text-center my-8 font-bold">
+        {" "}
+        Array Task 3 and 4.
+      </h1>
       <h2 className="text-2xl mb-2 text-center"> Task 3 Arrays given below.</h2>
       <p>
-      arr :{JSON.stringify(arr)} <br /> And <br /> required_value_Arr :{JSON.stringify(required_value_Arr)}
+        arr :{JSON.stringify(arr)} <br /> And <br /> required_value_Arr :
+        {JSON.stringify(required_value_Arr)}
       </p>
       <p className="text-blue-500 underline my-4">ANSWER</p>
       {ans1.map((e) => (
         <div>{e.name}</div>
       ))}
       <h2 className="text-2xl mb-2 text-center"> Task 4 Arrays given below.</h2>
-      <p>pureArr:{JSON.stringify(pureArr)} <br /> And <br /> matchArr:{JSON.stringify(matchArr)}
+      <p>
+        pureArr:{JSON.stringify(pureArr)} <br /> And <br /> matchArr:
+        {JSON.stringify(matchArr)}
       </p>
       <p className="text-blue-500 underline my-4">ANSWER</p>
       {result.map((e) => (
